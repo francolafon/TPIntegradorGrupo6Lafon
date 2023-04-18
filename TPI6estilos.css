@@ -1,0 +1,163 @@
+
+
+/*barra de navegacion flotante:*/
+/*titulo barra flotante:*/
+.titulobarra {
+    display: flex;
+    align-items: center;
+  }
+  
+  .titulobarra h1 {
+    font-size: 100px;
+    color: #fff;
+    margin: 40px; 
+    margin-right: 50px;
+  }
+
+/*logo:*/
+.logo-pequeño {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    margin-right: 20px
+    
+  }
+  .logo-pequeño img{
+    width: 100%;
+  }
+ 
+  /*logo titulo:*/
+.logo-titulo {
+    width: 400px;
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-right: 100px
+    
+  }
+  .logo-titulo img{
+    width: 100%;
+  }
+/*barra de navegacion:*/
+.barranav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #055892;
+    height: 220px;
+    padding: 10px;
+    text-align: right;
+    justify-content: center; /* Alineamos los items a la derecha */
+    align-items: flex-end; /* Alineamos los items en la parte inferior */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    z-index: 1;
+}
+.barranav a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
+    position: relative;
+    flex-grow: 0
+}
+
+.barranav a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+  
+.barranav a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 0;
+    height: 0;
+}
+.barranav a:focus {
+    background-color: #fff;
+    color: #055892;
+}
+  
+/* Agregamos un estilo para cuando se hace clic en un elemento */
+.barranav a:active,
+.barranav a.selected{
+    background-color: #fff;
+    color: #055892;
+}
+/* Cuerpo y grilla */
+.boxpresentacion {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 0px;
+    align-items: center;
+    margin-top: 200px;
+
+}
+
+
+.logo-presentacion{
+    display: flex;
+    align-items: center;
+}
+
+.logo-presentacion img {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    border-radius: 100%;
+    margin-right: 100px;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 2);
+    border-radius: 50%;
+}
+
+.grilla-titulo h2 {
+
+    color: #000000;
+    display: flex;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 50px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.grilla-titulo p {
+
+    margin-right: 100px;
+    margin-left: 10px;
+    color: #000000;
+    display: flex;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+    text-align: justify;
+}
+/* PAGINA SERVICIOS */
+.container {
+  margin-top: 280px;
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
