@@ -107,6 +107,7 @@
     grid-gap: 0px;
     align-items: center;
     margin-top: 200px;
+    margin-bottom: 100px;
 
 }
 
@@ -150,6 +151,7 @@
     font-size: 25px;
     font-family: Helvetica, sans-serif;
     text-align: justify;
+
 }
 /* PAGINA SERVICIOS */
 .container {
@@ -160,4 +162,56 @@
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+/* pie de pagina */
+.pie-pagina{
+  width: 100%;
+  background-color:#333333 ;
+}
+
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 100px;
+  padding: 30px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+  width: 300px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 30px;
+  height: 45px;
+  line-height: 45px;
+  color: #efefef;
+}
+.pie-pagina .grupo-2{
+  background-color: #111111;
+  padding: 15px 10px;
+  text-align: center;
+  color:#fff;
 }
